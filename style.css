@@ -1,0 +1,167 @@
+@charset "utf8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+:root{
+    --cor0: white; 
+    --cor1: #17b3da;   
+    --cor2: #1e5692;  
+    --cor3: #108dc7; 
+    --cor4: #ebd29a;
+    --cor5: black;
+}
+
+html{
+    height: 500vh;
+}
+
+.container{
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    width: 100%;
+    padding: 0px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+
+header.rolagem{
+    background-color: var(--cor2);
+    padding: 0px 4%;
+}
+
+header.rolagem a{
+    color: var(--cor0);
+}
+
+header.rolagem a, header.rolagem i{
+    color: var(--cor0);
+}
+
+header i{
+    font-size: 30px;
+    color: rgb(148, 7, 7)
+}
+
+header ul{
+    list-style: none;
+}
+
+header ul li{
+    display: inline-block;
+    margin: 0px 40px;
+}
+
+header ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+h1,h2,h3{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2,h3{
+    text-align: center;
+}
+
+#footer{
+    background-image: linear-gradient(45deg, #1e5692 15%, #1e5692 , #1e5692);
+    text-align: center;
+    padding: 10px;
+    padding-top: 10px;
+    color: white;
+}
+
+.btn-login button{
+    width: 140px;
+    height: 40px;
+    border: 0;
+    background-color: var(--cor3);
+    color: var(--cor0);
+    cursor: pointer;
+    transition: .2s;
+}
+
+.banner{
+    height: 100vh;
+    background-image: url(imagens/BACKGROUND_MEDIO.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner h1{
+    font-size: 3em;
+    color: var(--cor0);
+}
+
+.banner h1 span{
+    color: var(--cor0);
+}
+
+.banner2{
+    height: 100vh;
+    background-image: url(imagens/11zon_cropped.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner2 h1{
+    color: var(--cor0);
+    font-size: 32px;
+    padding-top: 150px;
+}
+
+.banner3{
+    height: 100vh;
+    background-image: url(imagens/mapa.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner4{
+    height: 100vh;
+    background-image: url(imagens/contato.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--cor5);
+}
+
+body{
+    background-position: center;
+    text-align: center;
+}
